@@ -1,8 +1,13 @@
 <?php
 
+namespace CamSpiers\HoneyPot\Models;
+
 class HoneyPotField extends TextField
 {
-
+    /**
+     * @param [type] $validator
+     * @return void
+     */
     public function validate($validator)
     {
         if (!(is_null($this->value) || $this->value === '')) {
@@ -18,7 +23,11 @@ class HoneyPotField extends TextField
         return true;
     }
 
-    public function FieldHolder($properties = array())
+    /**
+     * @param array $properties
+     * @return void
+     */
+    public function FieldHolder($properties = [])
     {
         return $this->renderWith('HoneyPotField_holder');
     }
