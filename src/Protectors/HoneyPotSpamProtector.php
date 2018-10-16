@@ -10,9 +10,10 @@ class HoneyPotSpamProtector implements SpamProtector {
 	/**
 	 * Returns the {@link HoneyPotField} associated with this protector
 	 *
-	 * @param $name
-	 * @param $title
-	 * @param $value
+     * @param string $name
+     * @param string $title
+     * @param mixed $value
+     * @return FormField The resulting field
 	 * 
 	 * @return void
 	 */
@@ -23,8 +24,7 @@ class HoneyPotSpamProtector implements SpamProtector {
 	/**
 	 * Not used by HoneyPotSpamProtector
 	 *
-	 * @param $fieldMapping
-	 * @return void
+	 * @param array $fieldMapping
 	 */
 	public function setFieldMapping($fieldMapping) {}
 
