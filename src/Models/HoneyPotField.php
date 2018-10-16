@@ -2,10 +2,12 @@
 
 namespace CamSpiers\HoneyPot\Models;
 
+use SilverStripe\Forms\TextField;
+
 class HoneyPotField extends TextField
 {
     /**
-     * @param [type] $validator
+     * @param $validator
      * @return void
      */
     public function validate($validator)

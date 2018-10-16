@@ -2,14 +2,18 @@
 
 namespace CamSpiers\HoneyPot\Protectors;
 
+use SilverStripe\SpamProtection\SpamProtector;
+use CamSpiers\HoneyPot\Models\HoneyPotField;
+
 class HoneyPotSpamProtector implements SpamProtector {
 
 	/**
 	 * Returns the {@link HoneyPotField} associated with this protector
 	 *
-	 * @param [type] $name
-	 * @param [type] $title
-	 * @param [type] $value
+	 * @param $name
+	 * @param $title
+	 * @param $value
+	 * 
 	 * @return void
 	 */
 	public function getFormField($name = null, $title = null, $value = null) {
@@ -18,6 +22,9 @@ class HoneyPotSpamProtector implements SpamProtector {
 
 	/**
 	 * Not used by HoneyPotSpamProtector
+	 *
+	 * @param $fieldMapping
+	 * @return void
 	 */
 	public function setFieldMapping($fieldMapping) {}
 
