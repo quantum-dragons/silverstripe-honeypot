@@ -4,8 +4,8 @@
     "type": "silverstripe-vendormodule",
     "license": "BSD-3-Clause",
     "require": {
-        "silverstripe/spamprotection": "~2.0.0",
-        "composer/installers": "~1.0"
+        "silverstripe/spamprotection": "^3.0.0",
+        "composer/installers": "^1.0"
     },
     "prefer-stable": true,
     "minimum-stability": "dev"
