@@ -13,5 +13,5 @@ Set the default spam protector in *mysite/_config/spamprotection.yml*
 	---
 	name: spamprotection
 	---
-	FormSpamProtectionExtension:
-	  default_spam_protector: HoneyPotSpamProtector
+	App\Extensions\FormSpamProtectionExtension:
+	  default_spam_protector: CamSpiers\HoneyPot\Protectors\HoneyPotSpamProtector
