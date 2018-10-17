@@ -8,7 +8,8 @@ class HoneyPotField extends TextField
 {
     /**
      * @param $validator
-     * @return void
+     * 
+     * @return boolean
      */
     public function validate($validator)
     {
@@ -27,11 +28,12 @@ class HoneyPotField extends TextField
 
     /**
      * @param array $properties
-     * @return void
+     * 
+     * @return string
      */
     public function FieldHolder($properties = [])
     {
-        return $this->renderWith('HoneyPotField_holder');
+        return $this->renderWith('CamSpiers\HoneyPot\Forms\HoneyPotField_holder');
     }
 
 }
