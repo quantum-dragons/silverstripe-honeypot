@@ -8,7 +8,7 @@
 
 	$ composer require camspiers/honeypot
 
-Set the default spam protector in *mysite/_config/spamprotection.yml*
+Set the default spam protector in *app/_config/spamprotection.yml*
 
 	---
 	name: spamprotection
