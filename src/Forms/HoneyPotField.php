@@ -1,6 +1,6 @@
 <?php
 
-namespace CamSpiers\HoneyPot\Models;
+namespace CamSpiers\HoneyPot\Forms;
 
 use SilverStripe\Forms\TextField;
 
